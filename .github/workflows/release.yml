@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: make
+      - name: Create release notes
+        run: cp CHANGELOG.md release-notes.md
+      - name: Upload release notes
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: release-notes.md

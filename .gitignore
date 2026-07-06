@@ -1,0 +1,4 @@
+is-modifier-down
+*.o
+*.dSYM/
+.DS_Store
