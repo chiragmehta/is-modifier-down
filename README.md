@@ -64,6 +64,7 @@ No args prints the normalized modifier mask and exits 0:
 ```
 
 Mask bits (shows which modifiers are pressed):
+
 - `cmd` = `1`
 - `opt` = `2`
 - `ctrl` = `4`
@@ -71,6 +72,7 @@ Mask bits (shows which modifiers are pressed):
 - `fn` = `16`
 
 Supported modifier args (any combination, any order):
+
 - `cmd` / `command`
 - `opt` / `option` / `alt`
 - `ctrl` / `control`
@@ -78,15 +80,16 @@ Supported modifier args (any combination, any order):
 - `fn` / `function` / `function-key` / `globe`
 
 Prefixes:
+
 - `!mod` = that modifier must be off (e.g. `!ctrl !shift`)
 - `+mod` = exclusive-on mode; all other modifiers must be off unless explicitly allowed (e.g. `+cmd shift`)
 
 Exit codes:
+
 - `0` = success
 - `1` = condition failed
 - `2` = invalid argument
 - `0-255` = if `--mask` is specified with no other args
-
 
 ## Build
 

@@ -5,6 +5,7 @@
 Initial public release.
 
 ### Features
+
 - Fast native macOS modifier detection
 - Supports `cmd`, `opt`, `ctrl`, `shift`, and `fn`
 - `!mod` required-off modifiers
